@@ -12,7 +12,8 @@ The provided Python code implements a basic image encryption algorithm using the
 3. Output and Completion:
  * The encrypted byte array, containing the scrambled image data, is written back to the original image file, overwriting the original content.
  * Finally, the program prints a message indicating successful encryption.
-Security Considerations:
+
+4. Security Considerations:
  * It's important to acknowledge that this is a relatively basic encryption method. For robust security applications, more sophisticated algorithms are recommended.
  * The decryption process would necessitate performing the XOR operation again with the identical key to restore the original image data.
  * Error handling mechanisms are not implemented in this code snippet. It would be beneficial to incorporate checks for invalid file paths or incorrect key input to enhance robustness.
