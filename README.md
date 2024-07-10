@@ -9,7 +9,10 @@
 #### 2. Encryption Process:
  > The code opens the image file in read-binary mode ('rb') to access the raw image data.
  > It reads the entire image content into a variable and subsequently closes the file.
- > To facilitate manipulation on a byte-by-byte basis, the image data is converted into a byte array.
+ > To facilitate manipulation on a byte-by-byte basis, the image data is converted into a byte array as mentioned in the image below.
+
+![maxresdefault](https://github.com/soheilsheikh/PRODIGY_CS_02/assets/96125177/191121f8-ad48-467c-b4c9-816fbfec789a)
+
  > The core encryption operation involves iterating over each byte in the array and performing a bitwise XOR operation with the encryption key.
  > The XOR operation acts as a simple cipher, scrambling the image data by flipping bits based on the corresponding bits in the key. This effectively encrypts the image content.
 #### 3. Output and Completion:
