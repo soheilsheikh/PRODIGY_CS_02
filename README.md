@@ -1,4 +1,5 @@
 # PRODIGY_CS_02
+![encrypted-file](https://github.com/soheilsheikh/PRODIGY_CS_02/assets/96125177/ec6d5eff-798d-47de-b940-6d7f9b2d8b1d)
 
 ## This Python code implements a basic image encryption algorithm using the XOR cipher. This is a symmetric key scheme, meaning the same key is used for both encryption and decryption. 
 
