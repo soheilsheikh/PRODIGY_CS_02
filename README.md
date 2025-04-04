@@ -1,28 +1,47 @@
-# PRODIGY_CS_02
+# 🔐 Image Encryption with XOR Cipher
+
 ![encrypted-file](https://github.com/soheilsheikh/PRODIGY_CS_02/assets/96125177/ec6d5eff-798d-47de-b940-6d7f9b2d8b1d)
 
-## This Python code implements a basic image encryption algorithm using the XOR cipher. 
-* This is a symmetric key scheme, meaning the same key is used for both encryption and decryption. 
+## 📋 Overview
+This Python implementation demonstrates a basic image encryption algorithm using the XOR cipher technique. It employs symmetric key cryptography, where identical keys are used for both encryption and decryption operations.
 
-## Here's a more detailed explanation of its functionality:
- 1. Input and Initialization:
-  * The program prompts the user to provide the file path of the image to be encrypted.
-  * It then requests a numerical encryption key, which will be crucial for the XOR operation.
- 2. Encryption Process:
-  * The code opens the image file in read-binary mode ('rb') to access the raw image data.
-  * It reads the entire image content into a variable and subsequently closes the file.
-  * To facilitate manipulation on a byte-by-byte basis, the image data is converted into a byte array as mentioned in the image below.
+## 🔍 Detailed Functionality
 
-![maxresdefault](https://github.com/soheilsheikh/PRODIGY_CS_02/assets/96125177/191121f8-ad48-467c-b4c9-816fbfec789a)
+### 1️⃣ Input and Initialization
+* 📁 The program prompts users for the image file path to be encrypted
+* 🔑 Users must provide a numerical encryption key for the XOR operation
 
-  * The core encryption operation involves iterating over each byte in the array and performing a bitwise XOR operation with the encryption key.
-  * The XOR operation acts as a simple cipher, scrambling the image data by flipping bits based on the corresponding bits in the key. This effectively encrypts the image content.
- 3. Output and Completion:
-  * The encrypted byte array, containing the scrambled image data, is written back to the original image file, overwriting the original content.
-  * Finally, the program prints a message indicating successful encryption.
+### 2️⃣ Encryption Process
+* 📂 Opens the target image in read-binary mode (`'rb'`)
+* 📊 Reads the complete image content into memory
+* 🔄 Converts image data into a byte array for byte-level manipulation
 
- 4. Security Considerations:
-  * It's important to acknowledge that this is a relatively basic encryption method. For robust security applications, more sophisticated algorithms are recommended.
-  * The decryption process would necessitate performing the XOR operation again with the identical key to restore the original image data.
-  * Error handling mechanisms are not implemented in this code snippet.
-  * It would be beneficial to incorporate checks for invalid file paths or incorrect key input to enhance robustness.
+![Byte Array Representation](https://github.com/soheilsheikh/PRODIGY_CS_02/assets/96125177/191121f8-ad48-467c-b4c9-816fbfec789a)
+
+* ⚙️ Performs a bitwise XOR operation on each byte using the provided encryption key
+* 🔀 The XOR operation effectively scrambles the image data by flipping bits according to the key pattern
+
+### 3️⃣ Output Generation
+* 💾 Writes the encrypted byte array back to the original file location
+* ✅ Displays a confirmation message upon successful encryption
+
+### 4️⃣ Security Considerations
+* ⚠️ This represents a basic encryption implementation; more sophisticated algorithms are recommended for high-security applications
+* 🔄 Decryption requires performing the XOR operation again with the identical key
+* 🛡️ The current implementation lacks robust error handling mechanisms
+* 💡 Future improvements could include validation for file paths and encryption key inputs
+
+## 🚀 Getting Started
+```python
+# Clone this repository
+git clone https://github.com/soheilsheikh/PRODIGY_CS_02.git
+
+# Navigate to the project directory
+cd PRODIGY_CS_02
+
+# Run the encryption script
+python encrypt.py
+```
+
+## 📝 License
+[MIT](https://choosealicense.com/licenses/mit/)
